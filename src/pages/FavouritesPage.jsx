@@ -1,0 +1,6 @@
+import { Heart } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import MedicineCard from '../components/MedicineCard'
+import { useFavourites } from '../context/FavouritesContext'
+import Seo from '../components/Seo'
+export default function FavouritesPage(){const {items,clear}=useFavourites();const removeAll=()=>{if(confirm('Remove all saved medicines?'))clear()};return <div className="page content-width"><Seo title="Favourites" description="Medicines saved on this device." noIndex/><div className="page-title heading-with-action"><div><span className="kicker">Saved on this device</span><h1>Favourites</h1><p>Keep frequently requested medicines together. Always confirm current availability with ARK med.</p></div>{items.length>0&&<button className="button secondary" onClick={removeAll}>Clear favourites</button>}</div>{items.length?<><p className="saved-count" aria-live="polite">{items.length} saved medicine{items.length===1?'':'s'}</p><div className="medicine-grid catalogue-grid">{items.map(item=><MedicineCard key={item.id} medicine={item}/>)}</div></>:<div className="empty-state"><Heart/><h2>No favourites yet</h2><p>Tap the heart on a medicine to save it here.</p><Link className="button primary" to="/medicines">Browse medicines</Link></div>}</div>}

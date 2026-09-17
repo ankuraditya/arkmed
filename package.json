@@ -1,0 +1,32 @@
+{
+  "name": "arkmed-pwa",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "check": "npm run lint && npm run build",
+    "test:backend": "cd backend && php artisan test",
+    "verify": "npm run check && npm run test:backend"
+  },
+  "dependencies": {
+    "@vite-pwa/assets-generator": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "latest",
+    "@vitejs/plugin-react": "latest",
+    "eslint": "latest",
+    "eslint-plugin-react-hooks": "latest",
+    "eslint-plugin-react-refresh": "latest",
+    "globals": "latest",
+    "vite": "latest",
+    "vite-plugin-pwa": "latest"
+  }
+}

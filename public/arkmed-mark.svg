@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="ARK med">
+  <rect width="512" height="512" rx="112" fill="#f7fbff"/>
+  <path d="M196 70h120v126h126v120H316v126H196V316H70V196h126z" fill="#07938e"/>
+  <path d="M112 278c87-1 110 59 139 121 21-112 71-202 166-241-83 6-147 43-190 110-31-23-69-33-115-29z" fill="#fff"/>
+  <path d="M265 270c51-81 104-116 160-119-16 68-60 113-139 132z" fill="#76bd22"/>
+</svg>
