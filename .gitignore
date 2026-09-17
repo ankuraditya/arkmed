@@ -1,9 +1,9 @@
 node_modules/
 dist/
 .DS_Store
+error_log
 .env
 .env.*
 !.env.example
 backend/vendor/
 backend/storage/*.key
-
