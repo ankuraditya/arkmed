@@ -9,6 +9,7 @@ use Illuminate\Foundation\Configuration\Middleware;
 use Illuminate\Http\Request;
 
 $apiPrefix = env('API_ROUTE_PREFIX', 'api');
+$apiPrefix = $apiPrefix === 'none' ? '' : $apiPrefix;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
