@@ -2,7 +2,7 @@
     RewriteEngine On
     RewriteBase /
 
-    RewriteRule ^api(?:/|$) api/index.php [END]
+    RewriteRule ^api/(?!index\.php)(.*)$ api/index.php/api/$1 [END]
 
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
