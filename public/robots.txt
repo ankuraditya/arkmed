@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /cart
+Disallow: /checkout
+Disallow: /favourites
+Disallow: /order-created
+Disallow: /track-order
+Disallow: /upload-prescription
+
+Sitemap: https://arkmedicine.in/sitemap.xml
